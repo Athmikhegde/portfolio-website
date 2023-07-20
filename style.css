@@ -199,7 +199,7 @@ section{
     justify-content: center;
     flex-direction: column;
     gap:2rem;
-    background: black;
+    background: rgb(28, 28, 28);
     padding-bottom: 6rem;
 }
 .heading{
@@ -256,3 +256,133 @@ section{
     display: inline-block;
     width: 15rem;
 }
+.education{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: auto;
+    padding-bottom: 5rem;
+}
+
+.education .education-row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+/*
+.education-row .education-column{
+   
+   
+    flex :1 1 40rem;
+
+}*/
+ .education-column .title{
+    font-size: 2.5rem;
+    margin: 0 0 1.5rem 2rem;
+
+ }
+
+ .education-column .education-box{
+    border-left: .2rem solid rgb(255, 0, 0);
+    
+
+ }
+ .education-box .education-content{
+    position: relative;
+    padding-left: 2rem;
+ }
+ .education-content .content{
+    position: relative;
+    padding:1.5rem;
+    border: .2rem solid rgb(252, 0, 0);
+    border-radius: .6rem;
+    margin-bottom: 2rem;
+ }
+ .education-content .content .year{
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+    padding-bottom: .5rem;
+ }
+ .education-content .content .year{
+    padding-right: .5rem;
+ }
+ .education-content .content h3{
+    font-size: 2rem;
+   padding-top: 0.5rem;
+ }
+ 
+.education-box .education-content::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -1.1rem;
+    width: 2rem;
+    height: 2rem;
+    background:red;
+    border-radius: 50%;
+}
+.education-content .content::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background:red;
+    z-index: -1;
+    transition: 0.5s;
+}
+.education-content .content:hover::before{
+    width: 100%;
+
+}
+
+.skills{
+    display: flex;
+    
+    flex-direction: column;
+    min-height: auto;
+    padding-bottom: 5rem;
+}
+.skills-box{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10rem;
+    border: .5rem solid red;
+    border-radius: 2rem;
+    justify-content: space-evenly;
+   
+}
+.skills-content{
+    margin: 2rem;
+    position: relative;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 2rem;
+    display: flex;
+    
+    
+}
+.skills h2{
+    margin-bottom: 5rem;
+}
+/*
+.skills-content::before{
+    content: "";
+    position: absolute;
+    
+    width: 100%;
+    height: 100%;
+    background:red;
+    z-index: 1;
+    transition: 2s;
+    opacity: 0;
+
+}
+
+.skills-content:hover::before{
+    opacity: 70%;
+
+}
+*/
