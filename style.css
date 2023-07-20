@@ -26,6 +26,16 @@ body{
     z-index: 100;
 
 }
+header nav a.active{
+    color: red;
+}
+.sticky{
+    background-color:  rgb(29, 29, 29);
+}
+
+.logochange{
+    color:red;
+}
 .logo{
     font-size: 2.5rem ;
     color: white;
@@ -428,3 +438,62 @@ section{
 
 }
 
+
+/*Breakpoints */
+@media (max-width: 1200px) {
+    html{
+        font-size: 55%;
+    }
+}
+
+@media (max-width: 992px) {
+    .header{
+        padding:2rem 4%;
+    }
+    .home-img{
+        width: 10%;
+        opacity: 100%;
+    }
+
+}
+@media (max-width: 768px) {
+    #menu-icon{
+        display: block;
+    }
+    .navbar{
+        position:absolute;
+        top:100%;
+        right:-1000px;
+        width: 100%;
+        padding: 1rem 4%;
+        background-color: rgb(37, 37, 37);
+        transition: 1s;
+    }
+    .navbar a{
+        display: block ;
+        margin: 3rem;
+    }
+    .navbar.active{
+        right:-600px
+    }
+    .education-row{
+        margin-top: 5rem;
+       justify-content: center;
+    }
+}
+@media (max-width: 520px) {
+    html{
+        font-size: 50%;
+    }
+    .skills-content{
+        width: 15rem;
+        height: 15rem;
+    }
+}
+@media (max-width: 462px) {
+    html{
+        font-size: 5.2rem;
+    }
+   
+    
+}
