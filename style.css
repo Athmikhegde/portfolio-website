@@ -439,6 +439,7 @@ section{
 }
 
 
+
 /*Breakpoints */
 @media (max-width: 1200px) {
     html{
@@ -463,18 +464,18 @@ section{
     .navbar{
         position:absolute;
         top:100%;
-        right:-1000px;
+        left:-1000px;
         width: 100%;
         padding: 1rem 4%;
         background-color: rgb(37, 37, 37);
-        transition: 1s;
+        transition: 0.5s;
     }
     .navbar a{
         display: block ;
         margin: 3rem;
     }
     .navbar.active{
-        right:-600px
+        left:0;
     }
     .education-row{
         margin-top: 5rem;
@@ -493,6 +494,9 @@ section{
 @media (max-width: 462px) {
     html{
         font-size: 60%;
+    }
+    .home-img{
+        display: none;
     }
    
     
