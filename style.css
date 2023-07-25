@@ -564,3 +564,19 @@ section{
     }
     
 }
+@media (max-width: 290px) {
+    html{
+        font-size: 45%;
+    }
+    .home-img{
+        display: none;
+    }
+    .skills-content{
+        width: 10rem;
+        height: 10rem;
+    }
+    .skills-box{
+        gap: 2rem;
+    }
+    
+}
