@@ -95,7 +95,25 @@ section{
     font-weight: 700;
     color: transparent;
     -webkit-text-stroke: 0.7px red;
+    background-image: linear-gradient(red,rgb(255, 54, 54));
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: homeBgText 6s linear infinite;
 }
+.home-content .text-animate h3::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border-right: 2px solid red;
+    z-index: -1;
+    animation: homeCurText 6s linear infinite;
+    animation-delay: 2s ;
+}
+
 .home-content p{
     font-size: 1.6rem;
     margin:2rem 0 4rem ;
@@ -577,6 +595,30 @@ section{
     }
     .skills-box{
         gap: 2rem;
+    }
+    
+}
+
+/* animations */
+@keyframes homeBgText {
+    0%,10%,100%{
+        background-position: -33rem 0;
+    }
+    65%,85%{
+        background-position: 0 0;
+    }
+    
+}
+@keyframes homeCurText{
+    0%,10%,100%{
+        width: 0;
+    }
+    65%,85%{
+        width: 100%;
+        opacity: 1;
+    }
+    75%,81%{
+        opacity:0;
     }
     
 }
