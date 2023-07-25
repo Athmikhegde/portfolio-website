@@ -544,8 +544,23 @@ section{
         width: 10rem;
         height: 10rem;
     }
-    
-    
-   
+    .skills-box{
+        gap: 5rem;
+    }
+}
+@media (max-width: 380px) {
+    html{
+        font-size: 50%;
+    }
+    .home-img{
+        display: none;
+    }
+    .skills-content{
+        width: 10rem;
+        height: 10rem;
+    }
+    .skills-box{
+        gap: 5rem;
+    }
     
 }
